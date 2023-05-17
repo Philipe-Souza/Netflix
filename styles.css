@@ -14,23 +14,23 @@ main {
 
 #background {
   width: 100%;
-  height: 130vh;
+  height: 120vh;
   background-image: url(/images/background.jpg);
   background-repeat: no-repeat;
-  background-size: inherit 110%;
+  background-size: inherit;
   position: relative;
 }
 
 #background-filter {
   position: absolute;
-  height: 130vh;
+  height: 120vh;
   width: 100%;
   background-color: #00081d74;
 }
 
 #background-gradient {
   position: absolute;
-  height: 130vh;
+  height: 120vh;
   width: 100%;
   background: linear-gradient(90deg, #00081dc5 30%, #00081d67, transparent);
 }
@@ -184,12 +184,12 @@ input::placeholder{
 #cards {
   display: absolute;
   width: 100%;
-  height: 330px;
+  height: 350px;
 }
 
 #grid-container {
   position: relative;
-  top: -170px;
+  top: -100px;
   left: 0;
   margin: 0 50px;
   display: grid;
@@ -223,4 +223,54 @@ article h1 {
 
 article p {
   margin-top: 20px;
+}
+
+#questions {
+  background-color: red;
+  margin: 10px 60px;
+  color: white;
+  width: 75%;
+}
+
+#questions h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin: 15px 0;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #223362;
+  color: white;
+  cursor: pointer;
+  padding: 25px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #00081d;
+  outline: none;
+  transition: 0.4s;
+  font-size: 1.6rem;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+  background-color: #435485;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 25px;
+  height: 250px;
+  background-color: #223362;
+  color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.panel p {
+  margin: 25px 0;
 }
