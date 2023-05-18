@@ -292,4 +292,53 @@ legend {
 footer {
   background-color: #00081d;
   padding: 60px;
+  color: rgb(166, 166, 166);
+}
+
+#links {
+  margin: 40px 0;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+  gap: 10px;
+}
+
+a {
+  color: rgb(166, 166, 166);
+}
+
+#select-container2 {
+  display: inline;
+  position: relative;
+  width: 150px;
+  height: 35px;
+  z-index: 0;
+}
+
+#select-background2 {
+  background-color: rgb(27, 27, 27);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 150px;
+  height: 34px;
+  border-radius: 2px;
+  z-index: -2;
+}
+
+#lang-icon-left2 {
+  position: absolute;
+  left: 10px;
+  bottom: 2px;
+  z-index: -1;
+}
+
+#lang-icon-right2 {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  z-index: -1;
 }
