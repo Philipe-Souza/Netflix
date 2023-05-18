@@ -150,7 +150,7 @@ option {
   margin-bottom: 20px;
 }
 
-form {
+#form-home {
   margin-bottom: 80px;
 }
 
@@ -227,8 +227,7 @@ article p {
 }
 
 #questions {
-  background-color: red;
-  margin: 10px 60px;
+  margin: 0 60px;
   color: white;
   width: 75%;
 }
@@ -288,4 +287,9 @@ article p {
 legend {
   margin: 20px 0;
   font-size: 1.3rem;
+}
+
+footer {
+  background-color: #00081d;
+  padding: 60px;
 }
