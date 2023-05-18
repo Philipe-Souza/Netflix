@@ -252,11 +252,20 @@ article p {
   outline: none;
   transition: 0.4s;
   font-size: 1.6rem;
+  position: relative;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .accordion:hover {
   background-color: #435485;
+}
+
+.accordion::before{
+  content: "+";
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  font-size: 3rem;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -274,4 +283,9 @@ article p {
 
 .panel p {
   margin: 25px 0;
+}
+
+legend {
+  margin: 20px 0;
+  font-size: 1.3rem;
 }
